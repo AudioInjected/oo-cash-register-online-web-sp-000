@@ -19,7 +19,7 @@ class CashRegister
       "There is no discount to apply."
     else
       total = @total - (@total * (@discount.to_f / 100))
-      binding.pry
+
     end
   end
 end
