@@ -1,8 +1,6 @@
 require 'pry'
 class CashRegister
   attr_accessor :discount, :total, :items
-
-  @items = []
   def initialize(discount = 0)
     @total = 0
     @discount = discount
@@ -24,6 +22,5 @@ class CashRegister
       "After the discount, the total comes to $#{@total.to_i}."
     end
   end
-
 end
   
